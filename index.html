@@ -46,11 +46,17 @@
     <h2>Let me tell you about Shiny Oranges</h2>
   </hgroup>
   <article data-timings="">
-    <p>My Shiny Oranges app can be found here: 
-<a href="https://viascully.shinyapps.io/DataProducts-ShinyApp/">https://viascully.shinyapps.io/DataProducts-ShinyApp/</a></p>
+    <p>My Shiny Oranges app can be found here: </p>
 
-<p>and the code behind it can be found here:
-<a href="https://github.com/viaScully/DataProducts-ShinyApp">https://github.com/viaScully/DataProducts-ShinyApp</a></p>
+<p><a href="https://viascully.shinyapps.io/DataProducts-ShinyApp/">https://viascully.shinyapps.io/DataProducts-ShinyApp/</a></p>
+
+<p>and the code behind it can be found here:</p>
+
+<p><a href="https://github.com/viaScully/DataProducts-ShinyApp">https://github.com/viaScully/DataProducts-ShinyApp</a></p>
+
+<p>and the Rmd code behind this presentation can be found here:</p>
+
+<p><a href="https://github.com/viaScully/ShinyOranges/tree/gh-pages">https://github.com/viaScully/ShinyOranges/tree/gh-pages</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -76,7 +82,7 @@
     <h2>It has everything</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
+    <ol class = "build incremental">
 <li>a Radio input</li>
 <li>ui input that is used in server.R to filter the right data</li>
 <li>plot for the selected tree that is generated as output that is rendered back in the ui</li>
@@ -89,8 +95,24 @@
 </slide>
 
 <slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Here&#39;s some R code that gets run upon Slidifying</h2>
+  </hgroup>
   <article data-timings="">
-    
+    <pre><code class="r">library(datasets)
+data(Orange)
+summary(Orange)
+</code></pre>
+
+<pre><code>##  Tree       age         circumference  
+##  3:7   Min.   : 118.0   Min.   : 30.0  
+##  1:7   1st Qu.: 484.0   1st Qu.: 65.5  
+##  5:7   Median :1004.0   Median :115.0  
+##  2:7   Mean   : 922.1   Mean   :115.9  
+##  4:7   3rd Qu.:1372.0   3rd Qu.:161.5  
+##        Max.   :1582.0   Max.   :214.0
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -119,7 +141,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='NA'>
+        data-slide=4 title='Here&#39;s some R code that gets run upon Slidifying'>
          4
       </a>
     </li>
