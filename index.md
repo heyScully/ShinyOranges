@@ -11,16 +11,34 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Let me tell you about Shiny Oranges
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+My Shiny Oranges app can be found here: 
+https://viascully.shinyapps.io/DataProducts-ShinyApp/
+
+and the code behind it can be found here:
+https://github.com/viaScully/DataProducts-ShinyApp
+
 
 --- .class #id 
 
-## Slide 2
+## It is a super simple app
 
+This app that allows you to display a plot of age (in days) against trunk circumference (in mm) for orange trees.
 
+Simply select one of the five trees measured, and the plot will update with the data for that tree.
 
+The data used for this project is the 'Orange' data set in the 'datasets' package.
+
+--- 
+
+## It has everything
+
+1. a Radio input
+2. ui input that is used in server.R to filter the right data
+3. plot for the selected tree that is generated as output that is rendered back in the ui
+4. enough documentation that even a novice user can use this app
+5. documentation that is right in the Shiny app itself
+
+---
 
